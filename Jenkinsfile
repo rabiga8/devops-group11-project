@@ -9,7 +9,7 @@ pipeline {
             steps {
                 // Check out the source code from GitHub
                 git 'https://github.com/rabiga8/https://github.com/rabiga8/devops-group11-project.git'
-                sh "git checkout jenkins"
+                sh "git checkout main"
             }
         }
         

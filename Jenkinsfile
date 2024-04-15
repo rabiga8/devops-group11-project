@@ -5,13 +5,13 @@ pipeline {
         DOCKER_IMAGE_NAME = 'rabiga8/image-group-project'
     }
     stages {
-        // stage('1.Checkout stage') {
-        //     steps {
-        //         // Check out the source code from GitHub
-        //         git 'https://github.com/rabiga8/devops-group11-project.git'
-        //         sh "git checkout main"
-        //     }
-        // }
+        stage('1.Checkout stage') {
+            steps {
+                // Check out the source code from GitHub
+                git 'https://github.com/rabiga8/devops-group11-project.git'
+                sh "git checkout main"
+            }
+        }
         
         // stage('2. Build Maven Project') {
         //     steps {

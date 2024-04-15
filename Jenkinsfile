@@ -13,13 +13,13 @@ pipeline {
             }
         }
         
-        // stage('2. Build Maven Project') {
-        //     steps {
-        //        withMaven(globalMavenSettingsConfig: '', jdk: '', maven: 'maven', mavenSettingsConfig: '', traceability: true) {
-        //        sh 'mvn clean package'
-        //       }
-        //     }
-        // }
+        stage('2. Build Maven Project') {
+            steps {
+               withMaven(globalMavenSettingsConfig: '', jdk: '', maven: 'maven', mavenSettingsConfig: '', traceability: true) {
+               sh 'mvn clean package'
+              }
+            }
+        }
         
         // stage('3. Docker Build') {
         //     steps {

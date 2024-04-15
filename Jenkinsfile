@@ -8,7 +8,7 @@ pipeline {
         stage('1.Checkout stage') {
             steps {
                 // Check out the source code from GitHub
-                git 'https://github.com/rabiga8/https://github.com/rabiga8/devops-group11-project.git'
+                git 'https://github.com/rabiga8/devops-group11-project.git'
                 sh "git checkout main"
             }
         }
